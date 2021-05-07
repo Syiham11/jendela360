@@ -76,8 +76,9 @@ class SaleController extends Controller
         $to_email = $request->email;
         $nama_pembeli = $request->nm_pembeli;
         $mobil = $check->nm_mobil;
+        $harga = $check->harga;
 
-        Mail::send('mail', ['nama_pembeli' => $nama_pembeli, 'mobil'=>$mobil], function ($m) use ($request) {
+        Mail::send('mail', ['nama_pembeli' => $nama_pembeli, 'mobil'=>$mobil, 'harga' => $harga], function ($m) use ($request) {
             $m->from('office@gmail.com', 'Invoice Pembelian');
 
             $m->to($request->email, 'Store')->subject('Invoice Pembelian');

@@ -105,8 +105,9 @@
                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
                   <tr>
                     <td class="bodycopy">
-                      Data Nama Pembeli: {{$nama_pembeli}}  ,<br>
-                      Nama Mobil: {{$mobil}} ,<br>
+                      Data Nama Pembeli: {{$nama_pembeli}}  <br>
+                      Nama Mobil: {{$mobil}} <br>
+                      Harga Mobil: {{$harga}}
 
                     </td>
                   </tr>
