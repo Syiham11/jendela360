@@ -68,7 +68,7 @@ class MasterController extends Controller
         $convert_kemarin = (int)$kemarin->jumlah;
         // this sum penjualan/stock*100
         @$total_today = ($convert_today/$stock_today)*100;
-        $total_kemarin = ($convert_kemarin/$stock_yesterday)*100;
+        @$total_kemarin = ($convert_kemarin/$stock_yesterday)*100;
         if($total_today < $total_kemarin)
         {
           $today = '+'.ceil($total_today).'%';
